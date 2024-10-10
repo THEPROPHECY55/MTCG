@@ -21,6 +21,6 @@ namespace MTCG
             Profile = new UserProfile();
         }
         
-        // TODO: Methoden 12
+        // TODO: Methoden Networking
     }
 }
