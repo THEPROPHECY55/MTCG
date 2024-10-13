@@ -1,6 +1,6 @@
 ﻿using System.Security.AccessControl;
 
-namespace MTCG
+namespace MTCG.Gameplay
 {
     public static class ElementEffectCalc
     {

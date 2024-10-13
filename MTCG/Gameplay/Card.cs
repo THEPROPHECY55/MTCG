@@ -1,4 +1,4 @@
-﻿namespace MTCG
+﻿namespace MTCG.Gameplay
 {
     public abstract class Card
     {

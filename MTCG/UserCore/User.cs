@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
+using MTCG.Gameplay;
 
-namespace MTCG
+namespace MTCG.UserCore
 {
     public class User
     {
@@ -11,7 +12,7 @@ namespace MTCG
         public List<Card> Stack { get; set; }
         public List<Card> Deck { get; set; }
         public UserProfile Profile { get; set; }
-
+        
         public User(string username, string password)
         {
             Username = username;
@@ -21,6 +22,6 @@ namespace MTCG
             Profile = new UserProfile();
         }
         
-        // TODO: Methoden Networking
+        public User() { }
     }
 }

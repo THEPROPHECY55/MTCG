@@ -1,6 +1,7 @@
 ﻿using System;
+using MTCG.UserCore;
 
-namespace MTCG
+namespace MTCG.Gameplay
 {
     public class Trade
     {

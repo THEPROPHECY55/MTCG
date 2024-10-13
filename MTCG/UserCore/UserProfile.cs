@@ -1,4 +1,4 @@
-﻿namespace MTCG
+﻿namespace MTCG.UserCore
 {
     public class UserProfile
     {

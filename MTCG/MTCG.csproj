@@ -13,6 +13,7 @@
         <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
         <FileAlignment>512</FileAlignment>
         <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+        <LangVersion>latest</LangVersion>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
         <PlatformTarget>AnyCPU</PlatformTarget>
@@ -34,30 +35,48 @@
         <WarningLevel>4</WarningLevel>
     </PropertyGroup>
     <ItemGroup>
+        <Reference Include="Mono.Security, Version=2.0.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
+          <HintPath>..\packages\Npgsql.2.2.7\lib\net35\Mono.Security.dll</HintPath>
+        </Reference>
+        <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+          <HintPath>..\packages\Newtonsoft.Json.13.0.3\lib\net35\Newtonsoft.Json.dll</HintPath>
+        </Reference>
+        <Reference Include="Npgsql, Version=2.2.7.0, Culture=neutral, PublicKeyToken=5d8b90d52f46fda7, processorArchitecture=MSIL">
+          <HintPath>..\packages\Npgsql.2.2.7\lib\net35\Npgsql.dll</HintPath>
+        </Reference>
         <Reference Include="System"/>
         <Reference Include="System.Core"/>
         <Reference Include="System.Data"/>
         <Reference Include="System.Xml"/>
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Battle.cs" />
-        <Compile Include="Card.cs" />
-        <Compile Include="ElementEffectCalc.cs" />
-        <Compile Include="ElementType.cs" />
-        <Compile Include="MonsterCard.cs" />
-        <Compile Include="MonsterType.cs" />
+        <Compile Include="Database\DBConnection.cs" />
+        <Compile Include="Gameplay\Battle.cs" />
+        <Compile Include="Gameplay\Card.cs" />
+        <Compile Include="Gameplay\ElementEffectCalc.cs" />
+        <Compile Include="Gameplay\ElementType.cs" />
+        <Compile Include="Gameplay\MonsterCard.cs" />
+        <Compile Include="Gameplay\MonsterType.cs" />
+        <Compile Include="Gameplay\SpellCard.cs" />
+        <Compile Include="Gameplay\Trade.cs" />
+        <Compile Include="Networking\AuthController.cs" />
+        <Compile Include="Networking\HttpRequest.cs" />
+        <Compile Include="Networking\HttpResponse.cs" />
+        <Compile Include="Networking\HttpServer.cs" />
+        <Compile Include="Networking\Router.cs" />
         <Compile Include="Program.cs"/>
         <Compile Include="Properties\AssemblyInfo.cs"/>
-        <Compile Include="SpellCard.cs" />
-        <Compile Include="Trade.cs" />
-        <Compile Include="User.cs" />
-        <Compile Include="UserProfile.cs" />
+        <Compile Include="UserCore\TokenManager.cs" />
+        <Compile Include="UserCore\User.cs" />
+        <Compile Include="UserCore\UserDTO.cs" />
+        <Compile Include="UserCore\UserProfile.cs" />
+        <Compile Include="UserCore\UserService.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Folder Include="Core\" />
-      <Folder Include="Networking\" />
       <Folder Include="Scenes\" />
-      <Folder Include="User\" />
+    </ItemGroup>
+    <ItemGroup>
+      <None Include="packages.config" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets"/>
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

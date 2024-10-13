@@ -1,4 +1,7 @@
 ﻿using System;
+using System.Net;
+using MTCG.Networking;
+using MTCG.Database;
 
 namespace MTCG
 {
@@ -6,8 +9,13 @@ namespace MTCG
     {
         public static void Main(string[] args)
         {
+            DbConnection db = new DbConnection();
+            db.TestConnection();
+            
+            HttpServer server = new HttpServer(IPAddress.Any, 25565);
+            server.Start();
+            
             bool running = true;
-
             while (running)
             {
                 Console.WriteLine("Menu:");

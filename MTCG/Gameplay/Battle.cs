@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using MTCG.UserCore;
 
-namespace MTCG
+namespace MTCG.Gameplay
 {
     public class Battle
     {
