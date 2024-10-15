@@ -1,6 +1,8 @@
 # Monster Trading Card Game (MTCG)
 
-Dieses Projekt ist ein Trading Card Game (TCG), das in C# entwickelt wurde und eine Docker-basierte Integration mit einer PostgreSQL-Datenbank verwendet. Es bietet eine funktionsfähige Serververbindung und unterstützt Gameplay-Mechaniken, Netzwerkanfragen und Benutzerverwaltung. Diese README dient als Überblick über die Projektstruktur und Funktionalitäten.
+GIT Repo: https://github.com/THEPROPHECY55/MTCG/tree/networking
+
+Dieses Projekt ist ein Trading Card Game (TCG), das in C# entwickelt wurde und eine Docker-basierte Integration mit einer PostgreSQL-Datenbank verwendet. Es bietet (zukünftig) eine funktionsfähige Serververbindung und unterstützt Gameplay-Mechaniken, Netzwerkanfragen und Benutzerverwaltung. Work in Progress...
 
 ## Features
 - **Kartenbasierte Kämpfe**: Kämpfe mit Monster- und Zauberkarten.
